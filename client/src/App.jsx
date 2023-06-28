@@ -4,6 +4,7 @@ import Home from "./routes/Home";
 import UpdatePage from "./routes/UpdatePage";
 import RestaurantDetailPage from "./routes/RestaurantDetailPage";
 import { RestaurantsContextProvider } from "./context/RestaurantsContext";
+import "./styles/Home.css";
 const App = () => {
   return (
     <RestaurantsContextProvider>
