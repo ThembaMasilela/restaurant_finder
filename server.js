@@ -12,7 +12,10 @@ app.use(cors());
 app.use(express.json());
 
 //seving the frontend
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "/client/build")));
+
+console.log(__dirname);
+console.log(path.join(__dirname, "/client/build"));
 
 // Get all Restaurants
 app.get("/api/v1/restaurants", async (req, res) => {
